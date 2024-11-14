@@ -1,12 +1,21 @@
+package Assigned;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name
+
+import java.util.Scanner;
 
 public class CoolNumbersRunner
 {
 	public static void main( String[] args )
 	{
-		System.out.println( CoolNumbers.countCoolNumbers(250) + " cool numbers between 6 - " + 250);
+		Scanner kb = new Scanner(System.in);
+		System.out.print("Enter your number: ");
+		int choice = kb.nextInt();
+
+		System.out.println( CoolNumbers.countCoolNumbers(choice) + " cool numbers between 6 - " + choice);
 		//add more test cases
+
+		kb.close();
 	}
 }
