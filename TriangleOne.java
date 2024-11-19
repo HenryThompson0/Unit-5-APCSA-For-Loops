@@ -14,11 +14,10 @@ public class TriangleOne
 		int i = size;
 		String k = let;
 
-		while (i>0)
+		for (i=size; i>0; i--)
 		{
 			System.out.println(k);
 			k+=let;
-			i--;
 		}
 
 		return output;
